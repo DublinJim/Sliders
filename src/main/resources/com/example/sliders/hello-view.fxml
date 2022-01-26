@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Slider?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sliders.HelloController" />
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sliders.HelloController">
+   <children>
+      <Slider layoutX="19.0" layoutY="34.0" orientation="VERTICAL" showTickLabels="true" showTickMarks="true" value="50.0" />
+      <Slider fx:id="slider1" layoutX="60.0" layoutY="331.0" onMouseReleased="#showTheValue" prefHeight="38.0" prefWidth="479.0" showTickLabels="true" showTickMarks="true" value="50.0" />
+      <Text fx:id="txtOut" layoutX="233.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Value ">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
